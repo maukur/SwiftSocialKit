@@ -22,10 +22,12 @@ needs
 needs 
 -> Privacy - Photo Library Usage Description
 -> Queried URL Schemes: instagram-reels
+-> registration of app to meta for developer to get facebookID
 
 ### TikTok
 
 needs
+-> registration of app to tiktok for developer to get clientID
 -> Queried URL Schemes: tiktoksharesdkl, snssdk1180, snssdk1233
 -> TikTokClientKey: client key
 -> URL types > URL Schemes > client key
