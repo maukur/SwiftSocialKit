@@ -1,11 +1,11 @@
 import Foundation
 import os.log
 
-class LogManager {
+actor LogManager {
     
     static let subsystem = "com.nicolaischneider.swiftsocialkit"
     
-    @MainActor static let swiftSocialKit = LogManager(category: "SWIFTSOCIALKIT")
+    static let swiftSocialKit = LogManager(category: "SWIFTSOCIALKIT")
     
     private let osLog: OSLog
     

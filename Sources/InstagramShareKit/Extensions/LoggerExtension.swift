@@ -1,7 +1,7 @@
 import Foundation
 import os.log
 
-class LogManager {
+actor LogManager {
     
     static let subsystem = "com.nicolaischneider.tiktoksharekit"
     
