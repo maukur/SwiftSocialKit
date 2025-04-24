@@ -3,9 +3,9 @@ import os.log
 
 actor LogManager {
     
-    static let subsystem = "com.nicolaischneider.instagramsharekit"
+    static let subsystem = "com.nicolaischneider.tiktoksharekit"
     
-    @MainActor static let instagramShareKit = LogManager(category: "InstagramShareKit")
+    @MainActor static let tikTokShareKit = LogManager(category: "TikTokShareKit")
     
     private let osLog: OSLog
     
