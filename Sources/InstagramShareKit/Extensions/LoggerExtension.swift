@@ -5,7 +5,7 @@ actor LogManager {
     
     static let subsystem = "com.nicolaischneider.tiktoksharekit"
     
-    @MainActor static let tikTokShareKit = LogManager(category: "TikTokShareKit")
+    static let tikTokShareKit = LogManager(category: "TikTokShareKit")
     
     private let osLog: OSLog
     
