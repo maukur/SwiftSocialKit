@@ -5,17 +5,40 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftSocialKit",
+    platforms: [
+        .iOS(.v12)
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SwiftSocialKit",
-            targets: ["SwiftSocialKit"]),
+            targets: ["SwiftSocialKit"]
+        ),
+        .library(
+            name: "InstagramShareKit",
+            targets: ["InstagramShareKit"]
+        ),
+        .library(
+            name: "TikTokShareKit",
+            targets: ["TikTokShareKit"]
+        ),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/tiktok/tiktok-opensdk-ios", .upToNextMinor(from: "2.5.0"))
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftSocialKit"),
-
+            name: "SwiftSocialKit"
+        ),
+        .target(
+            name: "InstagramShareKit",
+            dependencies: []
+        ),
+        .target(
+            name: "TikTokShareKit",
+            dependencies: [
+                .product(name: "TikTokOpenSDKCore", package: "tiktok-opensdk-ios"),
+                .product(name: "TikTokOpenShareSDK", package: "tiktok-opensdk-ios")
+            ]
+        )
     ]
 )
