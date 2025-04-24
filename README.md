@@ -78,6 +78,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 ## Planned
 
 - Support for Snapchat
+- adding stickers to instagram story or reel
 
 ## Installation
 
