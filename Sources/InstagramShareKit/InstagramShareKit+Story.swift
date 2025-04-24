@@ -4,7 +4,7 @@ import UIKit
 extension InstagramShareKit {
     
     @MainActor
-    public func postPhotoAsStory(_ photo: UIImage) -> ShareState {
+    public func postPhotoAsStory(_ photo: UIImage) -> InstagramShareState {
         
         // Log start of posting process
         LogManager.instagramShareKit.addLog("Starting Instagram Story post process", level: .info)
@@ -38,7 +38,7 @@ extension InstagramShareKit {
     }
     
     @MainActor
-    public func postVideoAsStory(_ video: URL) -> ShareState {
+    public func postVideoAsStory(_ video: URL) -> InstagramShareState {
         
         LogManager.instagramShareKit.addLog("Posting Instagram Story Video.")
                 

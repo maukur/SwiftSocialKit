@@ -1,11 +1,11 @@
 import Foundation
 import os.log
 
-actor LogManager {
+class LogManager: @unchecked Sendable {
     
     static let subsystem = "com.nicolaischneider.tiktoksharekit"
     
-    @MainActor static let tikTokShareKit = LogManager(category: "TikTokShareKit")
+    static let tikTokShareKit = LogManager(category: "TikTokShareKit")
     
     private let osLog: OSLog
     

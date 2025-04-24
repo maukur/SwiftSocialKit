@@ -4,7 +4,7 @@ import UIKit
 extension InstagramShareKit {
     
     @MainActor
-    public func postVideoAsReel(_ video: URL) -> ShareState {
+    public func postVideoAsReel(_ video: URL) -> InstagramShareState {
         
         LogManager.instagramShareKit.addLog("Starting to post video as reel", level: .default)
         

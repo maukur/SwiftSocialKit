@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ShareState {
+public enum InstagramShareState {
     case postedWithSuccess
     case instagramNotInstalled
     case failedToPost
