@@ -1,10 +1,10 @@
 import Foundation
 import os.log
 
-actor LogManager {
+class LogManager: @unchecked Sendable {
     
     static let subsystem = "com.nicolaischneider.swiftsocialkit"
-    
+
     static let swiftSocialKit = LogManager(category: "SWIFTSOCIALKIT")
     
     private let osLog: OSLog
@@ -16,24 +16,13 @@ actor LogManager {
     func addLog(
         _ message: String,
         input: String? = nil,
-        level: OSLogType = .default,
-        shareWithCrashlytics: Bool = true
+        level: OSLogType = .default
     ) {
         if let input = input {
             addlog("\(message): \(String(describing: input))", level: level)
         } else {
             addlog(message, level: level)
         }
-    }
-    
-    func addLog(
-        _ message: String,
-        input: CGFloat,
-        level: OSLogType = .default,
-        shareWithCrashlytics: Bool = true
-    ) {
-        let text = "\(message): \(input)"
-        addlog(text, level: level)
     }
     
     private func addlog(_ message: String, level: OSLogType) {
