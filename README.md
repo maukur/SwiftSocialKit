@@ -1,3 +1,11 @@
+<p align="center">
+    <img src="swift_social_kit_theme.png" width="1000" alt="SwiftSocialKit"/>
+</p>
+
+![Swift](https://img.shields.io/badge/Swift-6.1-orange) 
+![iOS v13+](https://img.shields.io/badge/iOS-v13+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 # SwiftSocialKit
 
 **SwiftSocialKit** is a Swift Package that enables simple sharing of media content (photos, videos) to Instagram and TikTok, as well as direct saving to the device. It's so simple that it's literally just one function such as `postPhotoAsStory()` or `postVideoAsTikTok()`. SwiftSocialKit is currnetly used in the app [One Hundred Questions](https://100questions.club).
@@ -13,7 +21,7 @@
 
 Use Swift Package Manager to add the package to your project:
 ```text
-https://github.com/your-username/SocialHubKit.git
+https://github.com/nicolaischneider/SwiftSocialKit.git
 ```
 
 ## Setup
