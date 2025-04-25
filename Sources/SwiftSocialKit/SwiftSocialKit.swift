@@ -1,1 +1,3 @@
-public struct SwiftSocialKit {}
+public struct SwiftSocialKit {
+    public init() {}
+}

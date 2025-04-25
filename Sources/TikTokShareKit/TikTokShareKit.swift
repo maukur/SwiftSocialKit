@@ -1,3 +1,3 @@
-import Foundation
-
-public struct TikTokShareKit {}
+public struct TikTokShareKit {
+    public init() {}
+}

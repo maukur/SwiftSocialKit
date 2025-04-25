@@ -4,7 +4,8 @@ import TikTokOpenShareSDK
 
 extension TikTokShareKit {
     
-    func postVideoAsTikTok(video: URL, redriectURI: String) async -> TikTokShareState {
+    @MainActor
+    public func postVideoAsTikTok(video: URL, redriectURI: String) async -> TikTokShareState {
         
         // Retrieve video, save to photos and get local identifier
         guard let videoIdentifier = try? await video.saveVideoToPhotos() else {
@@ -25,6 +26,7 @@ extension TikTokShareKit {
         return .postedWithSuccess
     }
     
+    @MainActor
     private func shareVideoToTikTok(localIdentifier: String, redriectURI: String) async throws -> TikTokShareResponse {
         try await withCheckedThrowingContinuation { continuation in
             DispatchQueue.main.async {
