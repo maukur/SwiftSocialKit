@@ -24,6 +24,29 @@ https://github.com/your-username/SocialHubKit.git
 
 ## Usage
 
+All you need is access to your image/video and pass it on to the respective instance which will take care of the rest.
+
+```swift
+import InstagramShareKit
+import SaveToDeviceKit
+import TikTokShareKit
+
+// Instagram
+let instagramKit = InstagramShareKit(facebookID: "your-facebook-app-id")
+let instagramState1 = instagramKit.postPhotoAsStory(yourUIImage)
+let instagramState2 = instagramKit.postVideoAsStory(yourVideoURL)
+let instagramState3 = instagramKit.postVideoAsReel(yourVideoURL)
+
+// Save to device
+let saveKit = SaveToDeviceKit()
+let saveImageState = await saveKit.saveImage(photo: yourUIImage)
+let saveVideoState = await saveKit.saveVideo(video: yourVideoURL)
+
+// TikTok
+let tiktokKit = TikTokShareKit()
+let tiktokState = await tiktokKit.postVideoAsTikTok(video: yourVideoURL, redriectURI: "your-redirect-uri")
+```
+
 ## Planned Features
 
 - Support for Snapchat  
