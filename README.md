@@ -1,6 +1,6 @@
 # SwiftSocialKit
 
-**SwiftSocialKit** is a Swift package that enables simple sharing of media content (photos, videos) to Instagram and TikTok, as well as direct saving to the device. It is already successfully used in the app [One Hundred Questions](https://100questions.club).
+**SwiftSocialKit** is a Swift Package that enables simple sharing of media content (photos, videos) to Instagram and TikTok, as well as direct saving to the device. It's so simple that it's literally just one function such as `postPhotoAsStory()` or `postVideoAsTikTok()`. SwiftSocialKit is currnetly used in the app [One Hundred Questions](https://100questions.club).
 
 ## Features
 
