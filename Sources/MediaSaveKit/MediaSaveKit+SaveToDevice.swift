@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension SwiftSocialKit {
+extension MediaSaveKit {
     
     public func saveImage(photo: UIImage) async -> SaveState {
         LogManager.swiftSocialKit.addLog("Starting image save process", level: .info)

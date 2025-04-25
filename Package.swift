@@ -10,8 +10,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftSocialKit",
-            targets: ["SwiftSocialKit"]
+            name: "MediaSaveKit",
+            targets: ["MediaSaveKit"]
         ),
         .library(
             name: "InstagramShareKit",
@@ -27,7 +27,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftSocialKit"
+            name: "MediaSaveKit"
         ),
         .target(
             name: "InstagramShareKit",
