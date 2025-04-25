@@ -2,7 +2,7 @@
 
 ## Requirements:
 
-- Register your app with [TikTok for Developers](https://developers.tiktok.com/) to get your **Client Key**.
+- Register your app with [TikTok for Developers](https://developers.tiktok.com/) to get your **Client Key** (Before getting the final approval from TikTok you can start testing in sandbox mode).
 - Add the following to your `Info.plist`:
 ```xml
 <key>LSApplicationQueriesSchemes</key>
