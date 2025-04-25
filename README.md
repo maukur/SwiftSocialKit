@@ -18,9 +18,9 @@ https://github.com/your-username/SocialHubKit.git
 
 ## Setup
 
-* **SaveToDeviceKit**: Find the Setup [here](SaveToDeviceKit/SETUP.md)
-* **InstagramShareKit**: Find the Setup [here](InstagramShareKit/SETUP.md)
-* **TikTokShareKit**: Find the Setup [here](TikTokShareKit/SETUP.md)
+* **SaveToDeviceKit**: Find the Setup [here](Sources/SaveToDeviceKit/SETUP.md)
+* **InstagramShareKit**: Find the Setup [here](Sources/InstagramShareKit/SETUP.md)
+* **TikTokShareKit**: Find the Setup [here](Sources/TikTokShareKit/SETUP.md)
 
 ## Usage
 
