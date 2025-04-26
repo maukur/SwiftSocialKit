@@ -3,6 +3,22 @@ import UIKit
 
 extension SaveToDeviceKit {
     
+    /**
+     * Saves a UIImage to the device's photo library.
+     *
+     * This asynchronous function attempts to save the provided image to the device's photo library
+     * using the UIImage extension method saveImageToPhotos(). It handles authorization errors
+     * and other potential failures during the save process.
+     *
+     * - Parameter photo: The UIImage to be saved to the photo library
+     * - Returns: A SaveState enum value indicating the result of the save operation:
+     *   - .savedSuccessfully: The image was successfully saved to the photo library
+     *   - .appNotAuthorizedToPhotos: The app doesn't have permission to access the photo library
+     *   - .failedToSave: The save operation failed due to an unknown error
+     *
+     * - Note: This operation requires photo library permissions to be granted by the user
+     * - Important: The app's Info.plist must include the appropriate photo library usage description
+     */
     public func saveImage(photo: UIImage) async -> SaveState {
         LogManager.swiftSocialKit.addLog("Starting image save process", level: .info)
         
@@ -31,6 +47,22 @@ extension SaveToDeviceKit {
         }
     }
     
+    /**
+     * Saves a video file to the device's photo library.
+     *
+     * This asynchronous function attempts to save the video at the provided URL to the device's
+     * photo library using the URL extension method saveVideoToPhotos(). It handles authorization
+     * errors and other potential failures during the save process.
+     *
+     * - Parameter video: The URL of the local video file to be saved to the photo library
+     * - Returns: A SaveState enum value indicating the result of the save operation:
+     *   - .savedSuccessfully: The video was successfully saved to the photo library
+     *   - .appNotAuthorizedToPhotos: The app doesn't have permission to access the photo library
+     *   - .failedToSave: The save operation failed due to an unknown error
+     *
+     * - Note: This operation requires photo library permissions to be granted by the user
+     * - Important: The app's Info.plist must include the appropriate photo library usage description
+     */
     public func saveVideo(video: URL) async -> SaveState {
         LogManager.swiftSocialKit.addLog("Starting video save process", input: video.lastPathComponent, level: .info)
         

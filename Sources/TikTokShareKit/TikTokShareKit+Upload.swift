@@ -4,6 +4,26 @@ import TikTokOpenShareSDK
 
 extension TikTokShareKit {
     
+    /**
+     * Posts a video to TikTok using the TikTok SDK.
+     *
+     * This asynchronous function saves the provided video to the photo library first,
+     * then uses the obtained local identifier to share the video to TikTok.
+     * It requires the TikTok app to be installed and properly configured.
+     *
+     * - Parameters:
+     *   - video: The URL of the local video file to be posted to TikTok
+     *   - redriectURI: The URI to redirect to after the TikTok sharing process
+     * - Returns: A TikTokShareState enum value indicating the result of the sharing operation:
+     *   - postedWithSuccess: The video was successfully posted to TikTok
+     *   - failedToPost: Failed to save the video or share it to TikTok
+     *
+     * - Note: This operation first saves the video to the photo library, requiring photo library permissions
+     * - Note: This function calls an internal shareVideoToTikTok method for the actual sharing process
+     * - Important: Requires the TikTok app to be installed and configured with the appropriate permissions
+     *
+     * @MainActor ensures this function runs on the main thread for UI operations
+     */
     @MainActor
     public func postVideoAsTikTok(video: URL, redriectURI: String) async -> TikTokShareState {
         
