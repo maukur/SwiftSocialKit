@@ -59,3 +59,8 @@ let tiktokState = await tiktokKit.postVideoAsTikTok(video: yourVideoURL, redriec
 
 - Support for Snapchat  
 - Ability to add stickers to Instagram stories and reels  
+
+## Third-Party Licenses
+
+This app uses the following third party swift packages:
+* [TikTokOpenSDK for iOS](https://chatgpt.com/c/681152ed-4d04-800d-acc0-4abcded16769): the licence can be found [here](ThirdPartyLicenses/TikTokOpenSDKLicense.md)
