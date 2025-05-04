@@ -19,9 +19,33 @@
 
 ## Installation
 
+### Swift Package Manager
+
 Use Swift Package Manager to add the package to your project:
 ```text
 https://github.com/nicolaischneider/SwiftSocialKit.git
+```
+
+### CocoaPods
+
+Add the following line to your `Podfile`:
+```ruby
+pod 'SwiftSocialKit'
+```
+
+Then run `pod install` and open your `.xcworkspace`.
+
+If you only need specific components, you can install them individually:
+
+```ruby
+# For saving content to device only
+pod 'SaveToDeviceKit'
+
+# For Instagram sharing functionality
+pod 'InstagramShareKit'
+
+# For TikTok sharing functionality
+pod 'TikTokShareKit'
 ```
 
 ## Setup
