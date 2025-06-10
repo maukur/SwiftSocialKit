@@ -82,7 +82,7 @@ let tiktokState = await tiktokKit.postVideoAsTikTok(video: yourVideoURL, redriec
 ## Planned Features
 
 - Support for Snapchat  
-- Ability to add stickers to Instagram stories and reels  
+- Ability to add stickers to Instagram Stories and Reels
 
 ## Third-Party Licenses
 
